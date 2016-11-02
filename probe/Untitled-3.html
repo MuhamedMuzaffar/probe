@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidenav {
+    display: none;
+    height: 100%;
+    width: 150px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 60px;
+}
+.content
+{
+  position: absolute;
+  top:0px;
+  right: 10px;
+  left: 0px;
+}
+
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+#main {
+    transition: margin-left .5s;
+	  margin-left: 180px;
+	      padding: 0px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.button {
+      background-color: #000000;
+      border: none;
+	  background-size: 100%;
+      
+}
+
+#prbimg{
+opacity: 0.3;
+} 
+  
+  html { 
+  
+  background:  no-repeat ; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  
+}
+#first{ color:#000000  }
+#second{ color:#000000}
+#third {color:#000000}
+#fourth {color:#000000}
+
+</style>
+<head><meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script></head>
+<body  background="probelast.jpg">
+<div id="whole">
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onClick="closeNav()">&times;</a>
+  
+  <a href="#"><button class="button"><img src="ABOUT.jpg" /></button></a>
+  <a href="#"><button class="button"><img src="GUEST.jpg" /></button></a>
+  <a href="#"><button class="button"><img src="DEMO.jpg" /></button></a>
+  <a href="#"><button class="button"><img src="TEAM.jpg" /></button></a>
+  <a href="#"><button class="button"><img src="SPON.jpg" /></button></a>
+  <a href="#"><button class="button"><img src="LOGIN.jpg" /></button></a>
+</div>
+
+<span style="font-size:30px;cursor:default" onClick="openNav()">&#9776; </span>
+<div id="main" class= "content"> <center><img  onmouseenter="move()" onMouseOut="movee()"src="bg.jpg" height="150px" id="prbimg"/></center>
+<br><br>
+<div id="first"><marquee><h3>ONGOING EVENTS<h3></marquee></div>
+<br>
+<div id="second"  ><p ><h4>
+Technology has become the cement which holds together each and every realm of today's world. Every single sphere of life has been deeply integrated with this marvel of mankind, so much that we cannot even begin to imagine how life would be without it.<h4></p></div>
+<br><br>
+<div id="third"><p><h4>FOR QUERIES CONTACT: ABCDEFGHI 9876543210<h4></p></div>
+<br><br>
+<div >
+ <p id="fourth"><h4> FOLLOW US ON:&emsp;<a href="https://www.facebook.com/Probe.NITT/"> <img src="facebook.jpg"> </a>
+&emsp; OTHER SOCIAL NETWORKING<h4></p>
+</div>
+
+<div class="hit-the-floor"></div>
+</div>
+<script>
+function move()
+{
+document.getElementById("prbimg").style.opacity="0.7";
+}
+function movee()
+{
+document.getElementById("prbimg").style.opacity="0.3";
+}
+function openNav() {
+    document.getElementById("mySidenav").style.display = "block";
+	
+    document.getElementById("main").style.marginLeft = "180px";
+}
+
+function closeNav() {
+    document.getElementById("mySidenav").style.display = "none";
+    document.getElementById("main").style.marginLeft = "180px";
+}
+</script>
+     
+</body>
+</html>
